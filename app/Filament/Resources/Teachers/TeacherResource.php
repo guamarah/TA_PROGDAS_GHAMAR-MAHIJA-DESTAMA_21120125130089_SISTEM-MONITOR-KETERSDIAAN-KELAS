@@ -35,12 +35,15 @@ class TeacherResource extends Resource
                 ->maxLength(255),
             Forms\Components\TextInput::make('email')
                 ->email()
+                ->required()
                 ->maxLength(255),
             Forms\Components\TextInput::make('phone')
                 ->label('Telepon')
+                ->required()
                 ->maxLength(20),
             Forms\Components\TextInput::make('department')
                 ->label('Departemen')
+                ->required()
                 ->maxLength(100),
         ]);
     }

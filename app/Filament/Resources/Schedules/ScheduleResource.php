@@ -58,8 +58,10 @@ class ScheduleResource extends Resource
                 ])
                 ->required(),
             Forms\Components\TimePicker::make('start_time')
+                    ->withoutSeconds()
                 ->required(),
             Forms\Components\TimePicker::make('end_time')
+                    ->withoutSeconds()
                 ->required(),
           
             Forms\Components\Select::make('status')
