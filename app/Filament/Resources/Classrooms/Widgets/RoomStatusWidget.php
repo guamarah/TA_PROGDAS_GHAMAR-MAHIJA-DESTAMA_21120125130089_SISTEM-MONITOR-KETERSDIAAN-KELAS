@@ -54,11 +54,7 @@ class RoomStatusWidget extends BaseWidget
                     $description = "Selesai pada " . substr($currentSchedule->end_time, 0, 5);
                     break;
 
-                case 'canceled':
-                    $value = 'DIBATALKAN';
-                    $color = Color::Gray;
-                    $description = "Jadwal dibatalkan";
-                    break;
+              
             }
         }
 
