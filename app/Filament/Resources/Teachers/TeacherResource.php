@@ -40,7 +40,8 @@ class TeacherResource extends Resource
             Forms\Components\TextInput::make('phone')
                 ->label('Telepon')
                 ->required()
-                ->maxLength(20),
+                ->numeric()
+                ->maxLength(10),
             Forms\Components\TextInput::make('department')
                 ->label('Departemen')
                 ->required()
